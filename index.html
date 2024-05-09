@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Calculator</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <h2> Basic Functional Calculator </h2>
+        <p>Click <a href="">Here</a> for the repo</p>
+        <table align="center" cellpadding="">
+            <tr align="center">
+
+                <td colspan="4">
+                    <input class="output-box" id="display" readonly>
+
+                </td>
+            </tr>
+            <div>
+                <tr>
+                    <td><button class="btn" onclick="appendDisplay('7')">7</button></td>
+                    <td><button class="btn" onclick="appendDisplay('8')">8</button></td>
+                    <td><button class="btn" onclick="appendDisplay('9')">9</button></td>
+                    <td><button class="btn" onclick="appendDisplay('/')">&divide;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="appendDisplay('4')">4</button></td>
+                    <td><button class="btn" onclick="appendDisplay('5')">5</button></td>
+                    <td><button class="btn" onclick="appendDisplay('6')">6</button></td>
+                    <td><button class="btn" onclick="appendDisplay('*')">&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="appendDisplay('1')">1</button></td>
+                    <td><button class="btn" onclick="appendDisplay('2')">2</button></td>
+                    <td><button class="btn" onclick="appendDisplay('3')">3</button></td>
+                    <td><button class="btn" onclick="appendDisplay('-')">&minus;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="appendDisplay('0')">0</button></td>
+                    <td><button class="btn" style="padding:0px 7px;" onclick="appendDisplay('.')">&#x1F784;</button>
+                    </td>
+                    <td><button class="btn" onclick="appendDisplay('+')">&plus;</button></td>
+                    <td><button class="btn-equal" onclick="Equal()" id="Equal">=</button></td>
+                </tr>
+            </div>
+        </table>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
